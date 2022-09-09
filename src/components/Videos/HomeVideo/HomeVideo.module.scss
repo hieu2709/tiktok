@@ -1,0 +1,158 @@
+.wrapper {
+  width: 740px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(22, 24, 35, 0.1);
+  display: flex;
+  // flex: 0 1;
+}
+.container {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  // flex: 0 0 1;
+}
+.left-header {
+  display: flex;
+  max-width: 80%;
+}
+.avatar {
+  margin-right: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.name {
+  cursor: pointer;
+}
+.nickname {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+.fullname {
+  margin-left: 5px;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+.check {
+  margin: 0 4px;
+  font-size: 1.4rem;
+  color: #20d5ec;
+}
+.desc {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.music-icon {
+  font-size: 1.4rem;
+  margin-right: 4px;
+}
+.music-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.follow-btn {
+  padding: 3px 16px !important;
+  margin-top: 10px;
+  // flex: 1;
+  // margin-right: 20px;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.video-container {
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+.video {
+  position: relative;
+  max-width: 500px;
+  max-height: 510px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 20px;
+  background-color: rgba(22, 24, 35, 1);
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .action-video {
+    display: flex;
+  }
+}
+.react-video video {
+  display: flex;
+  max-height: 510px;
+}
+.action-video {
+  width: 100%;
+  position: absolute;
+  padding: 0 20px;
+  bottom: 20px;
+  left: 0;
+  // display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.icon {
+  color: var(--white);
+  font-size: 2rem;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrap-action {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.action-btn {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: rgba(22, 24, 35, 0.05);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-action {
+  font-size: 2.2rem;
+}
+.liked {
+  color: red;
+  font-size: 2.2rem;
+  animation: like 0.5s linear;
+}
+
+@keyframes like {
+  from {
+    scale: 1;
+  }
+  50% {
+    scale: 2;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.number {
+  margin-top: 5px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.wrap-action {
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  margin-top: 30px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 8px 80px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(22, 24, 35, 0.6);
+}
+.video-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

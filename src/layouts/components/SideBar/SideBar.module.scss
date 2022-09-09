@@ -1,0 +1,25 @@
+.wrapper {
+  width: 356px;
+  padding: 20px 0px 26px 8px;
+  position: fixed;
+  max-height: 100vh;
+  overflow: hidden;
+  &::-webkit-scrollbar {
+    border-radius: 0;
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  &:hover {
+    overflow: scroll;
+  }
+}
+.menu {
+  margin-bottom: 16px;
+}

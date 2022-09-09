@@ -1,0 +1,42 @@
+.menu-items {
+  width: 224px;
+  .menu-item {
+    margin: 0;
+    text-align: left;
+    line-height: 2rem;
+    &:last-child {
+      margin-bottom: 8px;
+    }
+    &.separate {
+      border-top: 1.5px solid rgba(22, 24, 35, 0.1);
+    }
+  }
+}
+.menu-popper {
+  display: flex;
+  flex-direction: column;
+}
+
+//Header
+.header {
+  position: relative;
+  height: 34px;
+  flex-shrink: 0;
+}
+.menu-scrollable {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.back-btn {
+  width: 50px;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

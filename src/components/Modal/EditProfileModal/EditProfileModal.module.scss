@@ -1,0 +1,80 @@
+.wrapper {
+  width: 700px;
+}
+.inputWrapper {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+}
+.title-header {
+  padding: 20px 0 20px 20px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+}
+.title {
+  margin-top: 5px;
+  color: black;
+  width: 150px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.avatar-upload {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.input-image {
+  display: none;
+}
+.edit-wrap {
+  width: fit-content;
+  position: relative;
+}
+.upload-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  border: 1px solid rgb(208, 208, 211);
+  border-radius: 50%;
+  background-color: white;
+}
+.data {
+  width: 60%;
+  height: 38px;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 4px;
+  padding: 12px;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.textarea {
+  width: 60%;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 12px;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  resize: none;
+}
+.button {
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+}

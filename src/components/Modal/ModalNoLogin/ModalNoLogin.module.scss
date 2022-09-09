@@ -1,0 +1,13 @@
+.close-icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  background-color: rgb(22, 24, 35, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  padding: 4px;
+  cursor: pointer;
+}

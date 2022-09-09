@@ -1,0 +1,59 @@
+.wrapper {
+  --search_border_radius: 92px;
+  --search_height: 46px;
+  --search_top_spacer: 9px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: var(--default_layout_header_height);
+  background-color: var(--white);
+  box-shadow: 0px 1px 1px rgb(0 0 0/12%);
+}
+.inner {
+  height: 100%;
+  width: var(--default_layout_width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 20px;
+}
+.logo {
+  display: flex;
+}
+//actions
+.actions {
+  display: flex;
+  align-items: center;
+}
+.more-btn {
+  background-color: transparent;
+  font-size: 1.6rem;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.btn-action {
+  // font-size: 2.5rem;
+  background-color: transparent;
+  color: rgba(22, 24, 35, 0.9);
+  &:hover {
+    cursor: pointer;
+  }
+  margin-left: 20px;
+}
+
+.user-image {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+// LOGIN

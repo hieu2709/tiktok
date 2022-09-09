@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+}
+.main-info {
+  display: flex;
+  cursor: pointer;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.nick-name {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+.full-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.count-number {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+.title {
+  font-weight: 400;
+  margin-right: 15px;
+}
+.bio-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.close-icon {
+  cursor: pointer;
+}
+.close-icon {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+.edit-profile-modal {
+  position: relative;
+}
