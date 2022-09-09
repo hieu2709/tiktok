@@ -22,33 +22,37 @@ function SideBar() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    const FetchData = async () => {
-      var myHeaders = new Headers();
-      myHeaders.append("Authorization", "Bearer " + token);
+    if (token) {
+      const FetchData = async () => {
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "Bearer " + token);
 
-      var requestOptions = {
-        method: "GET",
-        headers: myHeaders,
-        body: null,
-        redirect: "follow",
+        var requestOptions = {
+          method: "GET",
+          headers: myHeaders,
+          body: null,
+          redirect: "follow",
+        };
+
+        const result = await fetch(
+          `https://tiktok.fullstack.edu.vn/api/me/followings?page=${page}`,
+          requestOptions
+        )
+          .then((response) => response.json())
+          .then((result) => {
+            // listFollow.push(...result.data);
+            return result;
+          });
+        if (page === 1) {
+          setFollowingUser(result.data);
+        } else {
+          setFollowingUser((prev) => prev.concat(result.data));
+        }
       };
-
-      const result = await fetch(
-        `https://tiktok.fullstack.edu.vn/api/me/followings?page=${page}`,
-        requestOptions
-      )
-        .then((response) => response.json())
-        .then((result) => {
-          // listFollow.push(...result.data);
-          return result;
-        });
-      if (page === 1) {
-        setFollowingUser(result.data);
-      } else {
-        setFollowingUser((prev) => prev.concat(result.data));
-      }
-    };
-    FetchData();
+      FetchData();
+    } else {
+      setFollowingUser([]);
+    }
   }, [page, token]);
   useEffect(() => {
     if (Object.values(user).length === 0) {

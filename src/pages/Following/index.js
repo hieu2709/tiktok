@@ -13,27 +13,30 @@ function Following() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    const fetchApi = async () => {
-      var myHeaders = new Headers();
-      myHeaders.append("Authorization", "Bearer " + token);
+    if (token) {
+      const fetchApi = async () => {
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "Bearer " + token);
 
-      var requestOptions = {
-        method: "GET",
-        headers: myHeaders,
-        body: null,
-        redirect: "follow",
+        var requestOptions = {
+          method: "GET",
+          headers: myHeaders,
+          body: null,
+          redirect: "follow",
+        };
+
+        const result = await fetch(
+          `https://tiktok.fullstack.edu.vn/api/videos?type=${TYPE}&page=${page}`,
+          requestOptions
+        )
+          .then((response) => response.json())
+          .then((result) => result.data);
+
+        setVideoResult((prev) => [...prev, ...result]);
       };
+      fetchApi();
+    }
 
-      const result = await fetch(
-        `https://tiktok.fullstack.edu.vn/api/videos?type=${TYPE}&page=${page}`,
-        requestOptions
-      )
-        .then((response) => response.json())
-        .then((result) => result.data);
-
-      setVideoResult((prev) => [...prev, ...result]);
-    };
-    fetchApi();
     const wrapper = document.querySelector(".wrapper");
     window.addEventListener("scroll", () => {
       if (
@@ -51,6 +54,7 @@ function Following() {
             <HomeVideo key={video.id} data={video} userVideo={video.user} />
           ))
         : "Ban chua dang nhap"}
+      {/* <h2>Chua dang nhap</h2> */}
     </div>
   );
 }
