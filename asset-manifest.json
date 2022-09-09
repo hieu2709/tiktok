@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tiktok/static/css/main.0eed5ff6.css",
-    "main.js": "/tiktok/static/js/main.a83a98cb.js",
-    "static/js/787.4c9d15e8.chunk.js": "/tiktok/static/js/787.4c9d15e8.chunk.js",
-    "static/media/logo.svg": "/tiktok/static/media/logo.bcfcc2badbe52b85ee569481ad6a121b.svg",
-    "index.html": "/tiktok/index.html",
-    "main.0eed5ff6.css.map": "/tiktok/static/css/main.0eed5ff6.css.map",
-    "main.a83a98cb.js.map": "/tiktok/static/js/main.a83a98cb.js.map",
-    "787.4c9d15e8.chunk.js.map": "/tiktok/static/js/787.4c9d15e8.chunk.js.map"
+    "main.css": "/static/css/main.0eed5ff6.css",
+    "main.js": "/static/js/main.2404b75a.js",
+    "static/js/787.4c9d15e8.chunk.js": "/static/js/787.4c9d15e8.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.bcfcc2badbe52b85ee569481ad6a121b.svg",
+    "index.html": "/index.html",
+    "main.0eed5ff6.css.map": "/static/css/main.0eed5ff6.css.map",
+    "main.2404b75a.js.map": "/static/js/main.2404b75a.js.map",
+    "787.4c9d15e8.chunk.js.map": "/static/js/787.4c9d15e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0eed5ff6.css",
-    "static/js/main.a83a98cb.js"
+    "static/js/main.2404b75a.js"
   ]
 }
